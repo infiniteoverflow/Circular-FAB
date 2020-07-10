@@ -1,16 +1,37 @@
-# circular_fab
+# Circular Floating Action Button
 
-A new Flutter project.
+The original package : [pub.dev](https://pub.dev/packages/fab_circular_menu#-readme-tab-)
 
-## Getting Started
+```
+    dependencies:
+        fab_circular_menu: ^1.0.0
+```
 
-This project is a starting point for a Flutter application.
+# Working 
+<img src="working.gif" height="500">
 
-A few resources to get you started if this is your first Flutter project:
+**To Add an Item to the FAB :**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```dart
+    RawMaterialButton(
+        onPressed: () {
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+        },
+        shape: CircleBorder(),
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+            Icon(Icons.search, color: Colors.black,size: 35,),
+            Text(
+                "SEARCH",
+                style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 15,
+                color: Colors.white
+                ),
+            )
+            ],
+        ),
+    ),
+```
